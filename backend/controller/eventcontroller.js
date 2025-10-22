@@ -6,7 +6,7 @@ import userModel from "../model/users.js"
 const stripe= new Stripe(process.env.STRIPE_SECRET)
  const eventPost= catchErrorhandel(async(req,res)=>{
   
-    let frontend_url='http://localhost:5173'
+    let frontend_url='https://event-portal-frontend.onrender.com'
     const data=  req.body
     const imgUrl=req.file
     const token = req.body.token

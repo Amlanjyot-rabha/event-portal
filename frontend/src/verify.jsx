@@ -11,7 +11,7 @@ useEffect(async()=>{
    let session_url=getParams.get("success")
 let event_id=getParams.get("event_id")
 console.log("session_url,event_id")
-const response = await axios.post('http://localhost:4000/api/eventpost/verifying',{session_url,event_id})
+const response = await axios.post('https://event-portal-9lgb.onrender.com/api/eventpost/verifying',{session_url,event_id})
 if(response.data.success){
     navigate('/')
 }

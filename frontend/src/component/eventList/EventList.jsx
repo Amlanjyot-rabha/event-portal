@@ -54,7 +54,7 @@ const EventList = () => {
     }
    }
 
-   console.log(data)
+   
     return (
       <div className="event-grid">
         {      
