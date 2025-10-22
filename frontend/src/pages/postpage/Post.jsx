@@ -45,7 +45,7 @@ const Post = () => {
     form.append('time',postData.time)
     form.append('Email',postData.Email)
     form.append('token',localStorage.getItem('token'))
-    const response =await axios.post("http://localhost:4000/api/eventpost/post", form)
+    const response =await axios.post("https://event-portal-9lgb.onrender.com/api/eventpost/post", form)
   if(response){
     window.location.replace(response.data.session_url)
   }

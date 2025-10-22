@@ -11,7 +11,7 @@ const ContextProvider =   (props) => {
 
  const fatchData=async()=>{
      try {
-      const response=await axios.get("http://localhost:4000/api/eventpost/events")
+      const response=await axios.get("https://event-portal-9lgb.onrender.com/api/eventpost/events")
       if(response){
          setEventList(response.data.data)
       }
@@ -28,7 +28,7 @@ const ContextProvider =   (props) => {
   useEffect(()=>{
      fatchData()
   },[])
- let backendUrl ="http://localhost:4000"
+ let backendUrl ="https://event-portal-9lgb.onrender.com"
 
 
   const contextValue={
